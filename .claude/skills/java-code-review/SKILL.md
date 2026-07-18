@@ -17,6 +17,7 @@ Systematic code review checklist for Java projects.
 1. **Quick scan** - Understand intent, identify scope
 2. **Checklist pass** - Go through each category below
 3. **Summary** - List findings by severity (Critical → Minor)
+4. **Recommendations** - Suggest improvements, best practices, and tests with the form // REVIEW [SEVERITY]: description + suggestion.
 
 ## Output Format
 
