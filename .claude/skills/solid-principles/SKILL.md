@@ -1,6 +1,6 @@
 ---
 name: solid-principles
-description: SOLID principles checklist with Java examples. Use when reviewing classes, refactoring code, or when user asks about Single Responsibility, Open/Closed, Liskov, Interface Segregation, or Dependency Inversion.
+description: SOLID principles checklist with Java examples. Use when reviewing classes, refactoring code, or when user asks about Single Responsibility, Open/Closed, Liskov, Interface Segregation, or Dependency Inversion. Scope is class-level design; do NOT use for macro package/module/dependency structure (use architecture-review), general readability/naming (use clean-code), or applying a specific GoF pattern (use design-patterns).
 ---
 
 # SOLID Principles Skill

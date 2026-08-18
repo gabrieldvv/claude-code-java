@@ -1,6 +1,6 @@
 ---
 name: security-audit
-description: Java security checklist covering OWASP Top 10, input validation, injection prevention, and secure coding. Works with Spring, Quarkus, Jakarta EE, and plain Java. Use when reviewing code security, before releases, or when user asks about vulnerabilities.
+description: Java security checklist covering OWASP Top 10, input validation, injection prevention, and secure coding. Works with Spring, Quarkus, Jakarta EE, and plain Java. Use when reviewing code security, before releases, or when user asks about vulnerabilities. This is the code-level security checklist; do NOT use for architecture-level threat/coupling exposure (use architecture-review's security scope), dependency CVE/version audits (use maven-dependency-audit), or general code review (use java-code-review).
 ---
 
 # Security Audit Skill

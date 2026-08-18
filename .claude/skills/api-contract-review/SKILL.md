@@ -1,6 +1,6 @@
 ---
 name: api-contract-review
-description: Review REST API contracts for HTTP semantics, versioning, backward compatibility, and response consistency. Use when user asks "review API", "check endpoints", "REST review", or before releasing API changes.
+description: Review REST API contracts for HTTP semantics, versioning, backward compatibility, and response consistency. Use when user asks "review API", "check endpoints", "REST review", or before releasing API changes. This reviews the HTTP contract, not the code; do NOT use for Spring Boot controller/service implementation patterns (use spring-boot-patterns) or general code review (use java-code-review).
 ---
 
 # API Contract Review Skill

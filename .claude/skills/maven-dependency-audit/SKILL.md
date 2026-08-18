@@ -1,6 +1,6 @@
 ---
 name: maven-dependency-audit
-description: Audit Maven dependencies for outdated versions, security vulnerabilities, and conflicts. Use when user says "check dependencies", "audit dependencies", "outdated deps", or before releases.
+description: Audit Maven dependencies for outdated versions, security vulnerabilities, and conflicts. Use when user says "check dependencies", "audit dependencies", "outdated deps", or before releases. This audits the dependency tree (versions/CVEs/conflicts); do NOT use for application-code security review (use security-audit) or Java version upgrades (use java-migration).
 ---
 
 # Maven Dependency Audit Skill

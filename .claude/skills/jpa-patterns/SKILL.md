@@ -1,6 +1,6 @@
 ---
 name: jpa-patterns
-description: JPA/Hibernate patterns and common pitfalls (N+1, lazy loading, transactions, queries). Use when user has JPA performance issues, LazyInitializationException, or asks about entity relationships and fetching strategies.
+description: JPA/Hibernate patterns and common pitfalls (N+1, lazy loading, transactions, queries). Use when user has JPA performance issues, LazyInitializationException, or asks about entity relationships and fetching strategies. This is the go-to for persistence/database performance; do NOT use for general code-level performance smells (use performance-smell-detection) or Spring wiring/config (use spring-boot-patterns).
 ---
 
 # JPA Patterns Skill

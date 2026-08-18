@@ -1,6 +1,6 @@
 ---
 name: java-code-review
-description: Systematic code review for Java with null safety, exception handling, concurrency, and performance checks. Use when user says "review code", "check this PR", "code review", or before merging changes.
+description: Systematic code review for Java with null safety, exception handling, concurrency, and performance checks. Use when user says "review code", "check this PR", "code review", or before merging changes. This is the broad, general-purpose review; do NOT use it for single-dimension deep dives — use concurrency-review (thread safety), security-audit (vulnerabilities), failure-handling (error/exception strategy), performance-smell-detection (performance), or api-contract-review (REST contracts) instead.
 ---
 
 # Java Code Review Skill

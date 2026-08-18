@@ -1,6 +1,6 @@
 ---
 name: clean-code
-description: Clean Code principles (DRY, KISS, YAGNI), naming conventions, function design, and refactoring. Use when user says "clean this code", "refactor", "improve readability", or when reviewing code quality.
+description: Clean Code principles (DRY, KISS, YAGNI), naming conventions, function design, and refactoring. Use when user says "clean this code", "refactor", "improve readability", or when reviewing code quality. Do NOT use for data-model/domain-type refactors (use clarity-of-intent), method/story structure refactors (use narrative-code), class-level design principles (use solid-principles), or macro package/dependency structure (use architecture-review).
 ---
 
 # Clean Code Skill
