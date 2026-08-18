@@ -30,6 +30,7 @@ Each skill folder contains:
 | [test-quality](test-quality/) | JUnit 5 + AssertJ testing patterns |
 | [maven-dependency-audit](maven-dependency-audit/) | Audit dependencies for updates and vulnerabilities |
 | [security-audit](security-audit/) | OWASP Top 10, input validation, injection prevention |
+| [failure-handling](failure-handling/) | Diagnostic review of error handling, exception strategy, logging, boundary protection |
 
 ### Architecture & Design
 | Skill | Description |
@@ -38,6 +39,8 @@ Each skill folder contains:
 | [solid-principles](solid-principles/) | S.O.L.I.D. principles with Java examples |
 | [design-patterns](design-patterns/) | Factory, Builder, Strategy, Observer, Decorator, etc. |
 | [clean-code](clean-code/) | DRY, KISS, YAGNI, naming, refactoring |
+| [clarity-of-intent](clarity-of-intent/) | Data-model refactor: domain types, carriers, invariants, immutability |
+| [narrative-code](narrative-code/) | Story-driven refactor: plot + narrative levels (Action/Scene/Chapter) |
 
 ### Framework & Data
 | Skill | Description |
