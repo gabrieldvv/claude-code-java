@@ -34,7 +34,7 @@ Each skill folder contains:
 ### Architecture & Design
 | Skill | Description |
 |-------|-------------|
-| [architecture-review](architecture-review/) | Macro-level review: packages, modules, layers, boundaries |
+| [architecture-review](architecture-review/) | Deep, scope-selectable review: cohesion, coupling, patterns, SOLID, security, client-use readiness, git-history signals, and package structure/layering |
 | [solid-principles](solid-principles/) | S.O.L.I.D. principles with Java examples |
 | [design-patterns](design-patterns/) | Factory, Builder, Strategy, Observer, Decorator, etc. |
 | [clean-code](clean-code/) | DRY, KISS, YAGNI, naming, refactoring |
