@@ -1,6 +1,6 @@
 ---
 name: performance-smell-detection
-description: Detect potential code-level performance smells in Java - streams, collections, boxing, regex, object creation. Provides awareness, not absolutes - always measure before optimizing. For JPA/database performance, use jpa-patterns instead.
+description: Detect potential code-level performance smells in Java - streams, collections, boxing, regex, object creation. Provides awareness, not absolutes - always measure before optimizing. For JPA/database performance, use jpa-patterns instead; for a broader green/efficiency/resource-waste audit (packaging, storage, communication, execution, memory), use the sustainability skill.
 ---
 
 # Performance Smell Detection Skill
@@ -348,3 +348,32 @@ grep -rn "new ArrayList<>()" --include="*.java"
 # Find findAll without pagination
 grep -rn "findAll()" --include="*.java"
 ```
+
+---
+
+## Mode
+
+This skill is **advisory / review-only**: it surfaces potential smells to investigate, not confirmed problems. Do not rewrite code or apply optimizations speculatively — recommend measuring (profiling/benchmarking) before any change, and only propose changes the user explicitly asks for.
+
+## Reporting Findings
+
+Use the same severity scale already defined above (🔴 High / 🟡 Medium / 🟢 Low — see the "Quick Reference: Potential Smells" table and the "Performance Review Checklist"). Report each potential smell with these fields:
+
+| Field | Content |
+|---|---|
+| **Severity** | high / medium / low — based on expected measured impact; keep it tentative until measured |
+| **Confidence** | high / medium / low — add **Assumptions** when medium or low |
+| **Location** | `file:line` or the specific code area |
+| **Issue** | the potential smell, in one line |
+| **Why it matters** | the concrete cost if the hot path is affected |
+| **Recommendation** | how to measure it, then the smallest safe change if measurement confirms it |
+
+Order findings by: (1) severity high→low, (2) confidence high→low, (3) fix effort smallest→largest. If nothing meaningful is found, say so explicitly rather than inventing low-value findings.
+
+## Self-Audit (run before returning findings)
+
+- [ ] Is every finding backed by observable evidence, not a guess?
+- [ ] Did I recommend measurement before optimization rather than asserting a fix?
+- [ ] Is each severity justified and kept tentative until measured?
+- [ ] Are uncertain findings marked with confidence and stated assumptions?
+- [ ] Did I stay in scope (see this skill's anti-triggers) and defer out-of-scope issues to the right skill?

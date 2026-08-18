@@ -51,6 +51,35 @@ Load only the relevant reference for the concern at hand:
 
 ---
 
+## Mode
+
+This skill is **review-only**: identify issues and propose changes with enough detail to act on. Do not rewrite files, apply patches, or change behavior unless the user explicitly asks. Illustrative snippets are welcome — label them as examples.
+
+## Reporting Findings
+
+Report each finding with these fields:
+
+| Field | Content |
+|---|---|
+| **Severity** | high / medium / low — based on breach impact and exploitability; map each finding to its OWASP Top 10 category |
+| **Confidence** | high / medium / low — add **Assumptions** when medium or low |
+| **Location** | `file:line` or the specific code area |
+| **Issue** | what is wrong, in one line |
+| **Why it matters** | the concrete risk if left unaddressed |
+| **Recommendation** | the smallest safe change that resolves it |
+
+Order findings by: (1) severity high→low, (2) confidence high→low, (3) fix effort smallest→largest. If nothing meaningful is found, say so explicitly rather than inventing low-value findings.
+
+## Self-Audit (run before returning findings)
+
+- [ ] Is every finding backed by observable evidence, not a guess?
+- [ ] Is each severity justified by real impact, not style preference?
+- [ ] Are uncertain findings marked with confidence and stated assumptions?
+- [ ] Would any recommendation break a public contract or change behavior? If so, is that flagged?
+- [ ] Did I stay in scope (see this skill's anti-triggers) and defer out-of-scope issues to the right skill?
+
+---
+
 ## Related Skills
 
 - `java-code-review` - General code review
