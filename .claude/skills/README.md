@@ -10,6 +10,7 @@ Each skill folder contains:
 |------|---------|----------|
 | `SKILL.md` | Instructions for Claude | AI (loaded with `view`) |
 | `README.md` | Documentation, examples, tips | Humans (onboarding) |
+| `references/` | Optional. Detailed sections loaded on demand to keep `SKILL.md` slim | AI (loaded on demand) |
 
 ## Available Skills
 
